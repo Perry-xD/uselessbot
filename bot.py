@@ -11,15 +11,15 @@ from requests.structures import CaseInsensitiveDict
 
 
 
-API_ID = 11392764 #os.environ.get('API_ID')
-API_HASH = 'fc83fc5ae9c699cc5356aec7de6773ae' #os.environ.get('API_HASH')
-BOT_TOKEN = '5225227620:AAGPMfMRS-y7gTvZrb0xjZzT6C8y88rWWC0' #os.environ.get('BOT_TOKEN')
+API_ID = os.environ.get('API_ID')
+API_HASH = os.environ.get('API_HASH')
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
 god = c("godboyx", API_ID, API_HASH, BOT_TOKEN)
 
 @god.on_message(filters.command('start', '/') & filters.private)
 async def starting(_, m: Message):
-    await god.send_message(m.chat.id, 'hello sir just the command /link to get the live class link')
+    await god.send_message(m.chat.id, 'hello sir just send the command /link or /live to get the live class link')
 
 @god.on_message(filters.command('link', '/') & filters.private)
 async def starting(_, m: Message):
