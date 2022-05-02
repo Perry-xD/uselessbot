@@ -1,0 +1,23 @@
+{
+    "name": "UseLEss Bot",
+    "description": "A Normal Telegram Bot",
+    "logo": "",
+    "keywords": ["Telegram","python"],
+    "repository": "https://github.com/Perry-xD/uselessbot/new/main",
+    "success_url": "https://t.me/t3j455",
+    "stack": "container",
+    "env": {
+        "APP_ID": {
+            "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @apiScrapperRoBot.",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Make a bot from @BotFather, and enter it's api token here.",
+            "value": ""
+        }
+    }
+}
