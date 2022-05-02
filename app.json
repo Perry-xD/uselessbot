@@ -6,7 +6,7 @@
     "repository": "https://github.com/Perry-xD/uselessbot/new/main",
     "success_url": "https://t.me/t3j455",
     "env": {
-        "APP_ID": {
+        "API_ID": {
             "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
             "value": ""
         },
