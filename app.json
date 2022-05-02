@@ -5,7 +5,6 @@
     "keywords": ["Telegram","python"],
     "repository": "https://github.com/Perry-xD/uselessbot/new/main",
     "success_url": "https://t.me/t3j455",
-    "stack": "container",
     "env": {
         "APP_ID": {
             "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
@@ -19,5 +18,8 @@
             "description": "Make a bot from @BotFather, and enter it's api token here.",
             "value": ""
         }
-    }
+      },
+      "buildpacks": [{
+        "url": "heroku/python"
+      }]
 }
