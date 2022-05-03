@@ -15,13 +15,13 @@ API_ID = os.environ.get('API_ID')
 API_HASH = os.environ.get('API_HASH')
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
-god = c("godboyx", API_ID, API_HASH, BOT_TOKEN)
+god = c("godboyx", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-@god.on_message(filters.command('start', '/') & filters.private)
+@god.on_message(filters.command(['start']) & filters.private)
 async def starting(_, m: Message):
     await god.send_message(m.chat.id, 'hello sir just send the command /link or /live to get the live class link')
 
-@god.on_message(filters.command('link', '/') & filters.private)
+@god.on_message(filters.command(['link'] filters.private)
 async def starting(_, m: Message):
     try:
         url = "https://api.penpencil.xyz/v1/batches/621c5167a592f502085b0878/todays-schedule"
@@ -37,7 +37,7 @@ async def starting(_, m: Message):
     except:
         await god.send_message(m.chat.id, 'aaj koi class nai hai lode!!')
 
-@god.on_message(filters.command('live', '/') & filters.private)
+@god.on_message(filters.command(['live'] & filters.private)
 async def starting(_, m: Message):
     try:
         url = "https://api.penpencil.xyz/v1/batches/621c5167a592f502085b0878/todays-schedule"
