@@ -15,7 +15,7 @@ API_ID = os.environ.get('API_ID')
 API_HASH = os.environ.get('API_HASH')
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
-god = c("godboyx", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+god = c("godboyx", API_ID, API_HASH, BOT_TOKEN)
 
 @god.on_message(filters.command(['start']) & filters.private)
 async def starting(_, m: Message):
